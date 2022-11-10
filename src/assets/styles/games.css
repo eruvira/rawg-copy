@@ -1,0 +1,57 @@
+.games-pallete {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.order-display {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.display {
+  display: flex;
+  gap: 15px;
+}
+
+.select-options{
+  display: flex;
+  gap: 8px;
+}
+
+.select-options__item {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0.4;
+  border: none;
+  border-radius: 5px;
+  background-color: #202020;
+}
+
+.select-options__item:hover:not(.active){
+    opacity: .6;
+}
+
+.option__list{
+    background-image: url('../icons/list_icon.svg');
+}
+
+.option__colums{
+    background-image: url('../icons/colums_icon.svg');
+}
+
+.active{
+    opacity: 1;
+}
